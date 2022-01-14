@@ -16,7 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import Logo from "./Components/Images/logo.png"
-import me from "./Components/Images/user.png"
+import Me from "./Components/Images/dolly.jpg"
 import Avatar from '@mui/material/Avatar';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
@@ -180,7 +180,7 @@ const App = ()=> {
                <NotificationsNoneIcon sx={{fontSize:"30px"}}/>
               </Badge>
             </IconButton>
-            <Avatar alt="Remy Sharp" src={me} />
+            <Avatar alt="Remy Sharp" src={Me} />
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
