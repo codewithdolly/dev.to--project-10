@@ -4,9 +4,9 @@ import "./LeftSidebar.scss"
 const LeftSidebar = () => {
     return (
         <div>
-            LeftSidebar
+            <h1>LeftSidebar</h1>
         </div>
     )
 }
 
-export default LeftSidebar
+export default LeftSidebar;

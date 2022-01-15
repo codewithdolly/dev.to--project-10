@@ -1,34 +1,28 @@
-import React from 'react'
-import {Header, LeftSidebar, MainBody, RightSidebar} from "./Components"
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  Outlet
-} from "react-router-dom";
+import React from "react";
+import "./App.scss"
+import { Header, LeftSidebar, MainBody, RightSidebar } from "./Components";
+import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    <BrowserRouter>
-    <>
-    {/* Header imported */}
-     <Header />
+    
+      <>
+      <BrowserRouter>
+      <div className="app">
+        {/* Header imported */}
+        <Header />
 
-     {/* boddy adding */}
-     <div>
-       {/* left sidebar */}
-<LeftSidebar />
-       {/* Main Body */}
-       <MainBody />
-       {/* Right sidebar */}
-       <RightSidebar />
-     </div>
-     
-
-    </>
-    </BrowserRouter>
-  )
-}
+        {/* boddy adding */}
+        <div className="app--body">
+          <LeftSidebar />
+          <MainBody />
+          <RightSidebar />
+        </div>
+        </div>
+        </BrowserRouter>
+      </>
+   
+  );
+};
 
 export default App;
