@@ -16,10 +16,10 @@ const DevPodcast = () => {
           <h5><b>A DEV Original Podcast</b></h5>
           <h1 className="col-md-5 devPodcast-box--left--h1"><b>DevNews Season 7 Has Arrived!</b></h1>
           <h2 className="mt-md-4 mb-md-3">S7:E1 - The Pudgy Penguins NFT Debacle, a Dev Intentionally Breaks His Own Open Source <br /> Libraries, & more.</h2>
-          <button className="btn my-1 devPodcast-box--left--btn" href="/" >Listen</button>
+          <button type="button" className="btn my-1 btn-link devPodcast-box--left--btn" href="/" >Listen</button>
           </div>
-          <div className="col-md-4">
-            <img src={PodcastImg} alt="" width="300px" />
+          <div className="col-md-3">
+            <img src={PodcastImg} alt="" width="350px" />
           </div>
 
           <button

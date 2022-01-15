@@ -1,26 +1,26 @@
 @import "../Style//color";
 
-.devPodcast{
-   
-    .devPodcast-box{
-        background-color: #333;
-        .devPodcast-box--left--h1{
-          font-size: 50px;
-          font-weight: bolder;
-            max-width: 100%;
-            margin-right: 10px;
-        
-      }
-      h2{
-          line-height: 40px;
-      }
+.devPodcast {
+  .devPodcast-box {
+    background-color: #333;
+    .devPodcast-box--left--h1 {
+      font-size: 50px;
+      font-weight: bolder;
+      max-width: 100%;
+      padding-left: 0;
+      margin-right: 2rem;
 
-      .devPodcast-box--left--btn{
-        background-color: $Blue;
-        color: white;
-        font-size: 35px;
-        font-weight: bold;
-        padding: 10px 1.5rem;
-      }
     }
+    h2 {
+      line-height: 45px;
+    }
+
+    .devPodcast-box--left--btn {
+      background-color: $Blue;
+      color: white;
+      font-size: 35px;
+      font-weight: bold;
+      padding: 10px 1.5rem;
+    }
+  }
 }
