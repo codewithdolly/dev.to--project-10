@@ -12,7 +12,17 @@ const App = () => {
   return (
     <BrowserRouter>
     <>
+    {/* Header imported */}
      <Header />
+
+     {/* boddy adding */}
+     <div>
+       {/* left sidebar */}
+       
+       {/* Main Body */}
+       {/* Right sidebar */}
+     </div>
+     
 
     </>
     </BrowserRouter>
