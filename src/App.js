@@ -1,10 +1,12 @@
 import React from 'react'
 import {Header} from "./Components"
 
-export const App = () => {
+const App = () => {
   return (
-    <>
-      <Header />
-    </>
+    <div>
+     <Header />
+    </div>
   )
 }
+
+export default App;
