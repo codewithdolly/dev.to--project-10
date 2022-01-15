@@ -1,27 +1,33 @@
 import React from "react";
-import "./App.scss"
-import { Header, LeftSidebar, MainBody, RightSidebar } from "./Components";
+import "./App.scss";
+import {
+  DevPodcast,
+  Header,
+  LeftSidebar,
+  MainBody,
+  RightSidebar,
+} from "./Components";
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
 const App = () => {
   return (
-    
-      <>
+    <>
       <BrowserRouter>
-      <div className="app">
-        {/* Header imported */}
-        <Header />
+        <div className="app">
+          {/* Header imported */}
+          <Header />
+          {/* adding Dev podcast page */}
+          <DevPodcast />
 
-        {/* boddy adding */}
-        <div className="app--body">
-          <LeftSidebar />
-          <MainBody />
-          <RightSidebar />
+          {/* boddy adding */}
+          <div className="app--body">
+            <LeftSidebar />
+            <MainBody />
+            <RightSidebar />
+          </div>
         </div>
-        </div>
-        </BrowserRouter>
-      </>
-   
+      </BrowserRouter>
+    </>
   );
 };
 
