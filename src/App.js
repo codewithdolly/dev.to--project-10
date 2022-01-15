@@ -1,11 +1,21 @@
 import React from 'react'
 import {Header} from "./Components"
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Outlet
+} from "react-router-dom";
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
+    <>
      <Header />
-    </div>
+
+    </>
+    </BrowserRouter>
   )
 }
 
