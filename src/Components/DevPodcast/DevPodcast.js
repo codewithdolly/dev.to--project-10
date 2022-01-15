@@ -15,7 +15,7 @@ const DevPodcast = () => {
           <div className="col-md-8 devPodcast-box--left">
           <h5><b>A DEV Original Podcast</b></h5>
           <h1 className="col-md-5 devPodcast-box--left--h1">DevNews Season 7 Has Arrived!</h1>
-          <h3>S7:E1 - The Pudgy Penguins NFT Debacle, a Dev Intentionally Breaks His Own Open Source Libraries, & more.</h3>
+          <h2>S7:E1 - The Pudgy Penguins NFT Debacle, a Dev Intentionally Breaks His Own Open Source Libraries, & more.</h2>
           <button className="btn my-1 devPodcast-box--left--btn" href="/" >Listen</button>
           </div>
           <div className="col-md-4">
