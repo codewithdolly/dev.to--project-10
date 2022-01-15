@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header} from "./Components"
+import {Header, LeftSidebar, MainBody, RightSidebar} from "./Components"
 import {
   BrowserRouter,
   Routes,
@@ -18,9 +18,11 @@ const App = () => {
      {/* boddy adding */}
      <div>
        {/* left sidebar */}
-       
+<LeftSidebar />
        {/* Main Body */}
+       <MainBody />
        {/* Right sidebar */}
+       <RightSidebar />
      </div>
      
 
