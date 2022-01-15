@@ -6,10 +6,13 @@
         background-color: #333;
         .devPodcast-box--left--h1{
           font-size: 50px;
-          font-weight: bold;
+          font-weight: bolder;
             max-width: 100%;
             margin-right: 10px;
         
+      }
+      h2{
+          line-height: 40px;
       }
 
       .devPodcast-box--left--btn{

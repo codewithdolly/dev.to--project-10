@@ -9,13 +9,13 @@ const DevPodcast = () => {
     <>
       <div className="container-fluid devPodcast">
         <div
-          class="row alert text-light alert-dismissible fade show m-4 p-5 devPodcast-box"
+          class="row alert text-light alert-dismissible fade show m-md-4 p-md-5 devPodcast-box"
           role="alert"
         >
           <div className="col-md-8 devPodcast-box--left">
           <h5><b>A DEV Original Podcast</b></h5>
-          <h1 className="col-md-5 devPodcast-box--left--h1">DevNews Season 7 Has Arrived!</h1>
-          <h2 className="mt-3">S7:E1 - The Pudgy Penguins NFT Debacle, a Dev Intentionally Breaks His Own Open Source Libraries, & more.</h2>
+          <h1 className="col-md-5 devPodcast-box--left--h1"><b>DevNews Season 7 Has Arrived!</b></h1>
+          <h2 className="mt-md-4 mb-md-3">S7:E1 - The Pudgy Penguins NFT Debacle, a Dev Intentionally Breaks His Own Open Source <br /> Libraries, & more.</h2>
           <button className="btn my-1 devPodcast-box--left--btn" href="/" >Listen</button>
           </div>
           <div className="col-md-4">
