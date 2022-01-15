@@ -1,22 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./LeftSidebar.scss";
-import InputEmoji from 'react-input-emoji'
+import { TwoWheeler } from '@mui/icons-material';
+import { TwoWheelerOutlined } from '@mui/icons-material';
 
 const LeftSidebar = () => {
-    const [ text, setText ] = useState('')
 
-    function handleOnEnter (text) {
-        console.log('enter', text)
-      }
     return (
         <div>
-             <InputEmoji
-          value={text}
-          onChange={setText}
-          cleanOnEnter
-          onEnter={handleOnEnter}
-          placeholder="Type a message"
-        />
+        <TwoWheelerOutlined />
+            {/* <TwemojiText>
+            Hello world! 🌎
+        </TwemojiText> */}
         </div>
     )
 }
