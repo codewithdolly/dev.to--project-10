@@ -23,8 +23,10 @@ const DevPodcast = () => {
           </div>
 
           <button
+          
             type="button"
             class="close"
+            size="large"
             data-dismiss="alert"
             aria-label="Close"
           >
