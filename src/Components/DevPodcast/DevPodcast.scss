@@ -1,0 +1,23 @@
+@import "../Style//color";
+
+.devPodcast{
+   
+    .devPodcast-box{
+        background-color: #333;
+        .devPodcast-box--left--h1{
+          font-size: 50px;
+          font-weight: bold;
+            max-width: 100%;
+            
+        
+      }
+
+      .devPodcast-box--left--btn{
+        background-color: $Blue;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+        padding: 10px 1.5rem;
+      }
+    }
+}

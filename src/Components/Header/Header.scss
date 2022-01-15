@@ -1,3 +1,5 @@
+@import "../Style//color";
+
 .header {
   background-color: white;
   .header--navbar {
@@ -6,11 +8,11 @@
     color: rgba(0, 0, 0, 0.719);
   }
   .header--btn {
-    color: rgb(59, 73, 223);
-    border: 1px solid rgb(59, 73, 223);
+    color: $Blue;
+    border: 1px solid $Blue;
     text-transform: capitalize;
     &:hover {
-      background-color: rgb(59, 73, 223);
+      background-color: $Blue;
       color: white;
       text-decoration: underline;
     }

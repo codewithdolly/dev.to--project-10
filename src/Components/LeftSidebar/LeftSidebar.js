@@ -4,7 +4,7 @@ import "./LeftSidebar.scss"
 const LeftSidebar = () => {
     return (
         <div>
-            <h1>LeftSidebar</h1>
+            {/* <h1>LeftSidebar</h1> */}
         </div>
     )
 }
