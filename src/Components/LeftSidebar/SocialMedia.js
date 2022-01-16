@@ -8,9 +8,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "@mui/material";
 
 const SocialMedia = () => {
-    function handleChange(evt) {
-        console.log("new value is: ", evt.target.value);
-      }
+  function handleChange(evt) {
+    console.log("new value is: ", evt.target.value);
+  }
   return (
     <>
       <div className="socialMedia">
@@ -34,8 +34,13 @@ const SocialMedia = () => {
           <p>
             <b>Populor Tags</b>
           </p>
-          <select name="Software" id="software" multiple className="p-2" onChange={handleChange}>
-
+          <select
+            name="Software"
+            id="software"
+            multiple
+            className="p-2"
+            onChange={handleChange}
+          >
             {hashTags.map((tag) => {
               return (
                 <>
