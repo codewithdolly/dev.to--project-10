@@ -1,20 +1,38 @@
 import React from "react";
 import "./LeftSidebar.scss";
-import { TwoWheeler } from "@mui/icons-material";
-import { TwoWheelerOutlined } from "@mui/icons-material";
+import {Link} from "react-router-dom";
+import { Button } from "@mui/material";
 
 const LeftSidebar = () => {
   return (
-    <div>
-      <TwoWheelerOutlined />
-     
-    </div>
+    <>
+      <div className="leftSidebar">
+      <div className="card">
+      <h5><Link to="/">DEV Community</Link> is a community of 781,397 amazing developers</h5>
+          <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
+          <Link to="/">Hi</Link>
+          <Button>Create Account</Button>
+          <Button>Log In</Button>
+
+      </div>
+        {navLists.map((nav) => {
+          return (
+            <>
+              <div className="d-flex" style={{ fontSize: "18px" }}>
+                <div className="mr-3">{nav.icon}</div>
+                <div>{nav.name}</div>
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </>
   );
 };
 
 export default LeftSidebar;
 
-const NavLists = [
+const navLists = [
   {
     icon: "🏠",
     name: "Home",
@@ -59,22 +77,19 @@ const NavLists = [
     icon: "🤝",
     name: "Contact",
   },
-  
 ];
 
-
-
-const otherTag= [
-    {
-        icon: "👍",
-        name: "Code of Conduct",
-      },
-      {
-        icon: "🤓",
-        name: "Privacy Policy",
-      },
-      {
-        icon: "👀",
-        name: "Terms of use",
-      },
-]
+const otherTag = [
+  {
+    icon: "👍",
+    name: "Code of Conduct",
+  },
+  {
+    icon: "🤓",
+    name: "Privacy Policy",
+  },
+  {
+    icon: "👀",
+    name: "Terms of use",
+  },
+];
