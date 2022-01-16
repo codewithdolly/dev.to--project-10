@@ -19,14 +19,10 @@
     font-size: 18px;
 
     &:hover {
-        text-decoration: underline;
-        color: $Blue;
-    }
-    .div{
-        &:hover{
-            text-decoration: none;
-        }
-        
+      text-decoration: underline;
+      color: $Blue;
+      background-color: rgba(0, 0, 255, 0.055);
+      border-radius: 3px;
     }
   }
 }

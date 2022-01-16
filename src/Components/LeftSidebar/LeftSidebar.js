@@ -7,7 +7,7 @@ const LeftSidebar = () => {
   return (
     <>
       <div className="leftSidebar">
-        <div className="card p-3">
+        <div className="card p-3 shadow-sm bg-white">
           <h5>
             <Link to="/">DEV Community</Link> is a community of 781,397 amazing
             developers
@@ -37,30 +37,33 @@ const LeftSidebar = () => {
             </Link>
           </center>
         </div>
-        {navLists.map((nav) => {
-          return (
-            <>
-              <Link to={nav.link} className="d-flex ml-2 leftsidebar--link">
-                <div className="mr-3">{nav.icon}</div>
-                <p>{nav.name}</p>
-              </Link>
-            </>
-          );
-        })}
-        <p>
-          <b>Other</b>
-        </p>
-        <div>
-        {otherTag.map((nav) => {
-          return (
-            <>
-              <Link to={nav.link} className="d-flex ml-2 leftsidebar--link">
-                <div className="mr-3">{nav.icon}</div>
-                <p>{nav.name}</p>
-              </Link>
-            </>
-          );
-        })}
+        <div className="mt-4">
+          {navLists.map((nav) => {
+            return (
+              <>
+                <Link to={nav.link} className="d-flex ml-2 leftsidebar--link">
+                  <div className="mr-3">{nav.icon}</div>
+                  <p>{nav.name}</p>
+                </Link>
+              </>
+            );
+          })}
+        </div>
+
+        <div className="mt-4">
+          <p>
+            <b>Other</b>
+          </p>
+          {otherTag.map((nav) => {
+            return (
+              <>
+                <Link to={nav.link} className="d-flex ml-2 leftsidebar--link">
+                  <div className="mr-3">{nav.icon}</div>
+                  <p>{nav.name}</p>
+                </Link>
+              </>
+            );
+          })}
         </div>
       </div>
     </>
