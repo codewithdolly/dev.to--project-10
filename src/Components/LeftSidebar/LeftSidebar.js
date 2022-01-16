@@ -2,6 +2,7 @@ import React from "react";
 import "./LeftSidebar.scss";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
+import SocialMedia from "./SocialMedia";
 
 const LeftSidebar = () => {
   return (
@@ -65,6 +66,7 @@ const LeftSidebar = () => {
             );
           })}
         </div>
+        <SocialMedia />
       </div>
     </>
   );
