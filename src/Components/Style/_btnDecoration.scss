@@ -1,0 +1,12 @@
+@import "./color";
+
+.btnDecoration{
+    color: $Blue;
+    border: 1px solid $Blue;
+    text-transform: capitalize;
+    &:hover {
+      background-color: $Blue;
+      color: white;
+      text-decoration: underline;
+    }
+}

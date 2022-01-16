@@ -1,0 +1,32 @@
+@import "../Style/color";
+
+.leftSidebar {
+  width: 18%;
+  margin-right: 20px;
+  .leftSidebar--btn {
+    color: $Blue;
+    border: 1px solid $Blue;
+    text-transform: capitalize;
+    &:hover {
+      background-color: $Blue;
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .leftsidebar--link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+
+    &:hover {
+        text-decoration: underline;
+        color: $Blue;
+    }
+    .div{
+        &:hover{
+            text-decoration: none;
+        }
+        
+    }
+  }
+}
