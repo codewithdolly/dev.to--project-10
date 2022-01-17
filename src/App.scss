@@ -3,10 +3,8 @@
     .app--body{
        display: flex;
        margin: auto;
-       margin: 0 8%;
-       .app--body--LeftSidebar{
-        width: 15%;
-        
-       }
+    //    margin: 0 8%;
+       justify-content: space-around;
+      
     }
 }
