@@ -1,10 +1,10 @@
 @import "../Style/color";
 
-.newsList {
-  .newsList--link {
+.waterCoolerList {
+  .waterCoolerList--link {
     color: $Blue;
   }
-  .newsList--list {
+  .waterCoolerList--list {
     background-color: menu;
     color: rgba(0, 0, 0, 0.836);
   &:hover {
@@ -12,7 +12,7 @@
     color: $Blue;
   }
 }
-.newsList--create{
+.waterCoolerList--create{
     color: gray;
     margin-bottom: -1rem;
     &:hover{

@@ -1,0 +1,29 @@
+@import "../Style/color";
+
+.challengeList {
+  .challengeList--link {
+    color: $Blue;
+  }
+  .challengeList--list {
+    background-color: menu;
+    color: rgba(0, 0, 0, 0.836);
+  &:hover {
+    background-color: white;
+    color: $Blue;
+  }
+}
+.challengeList--create{
+    color: gray;
+    margin-bottom: -1rem;
+    &:hover{
+        color: $Blue;
+    }
+}
+.news--btn{
+  font-size: 10px;
+  background-color: $Blue;
+  border-radius: 20%;
+}
+}
+
+

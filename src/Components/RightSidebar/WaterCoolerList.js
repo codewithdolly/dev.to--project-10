@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./NewsList.scss";
+import "./WaterCoolerList.scss";
 
-const NewsList = () => {
+const WaterCoolerList = () => {
   return (
     <>
-      <div className="newsList mt-3">
+      <div className="waterCoolerList mt-3">
         <div class="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
-              <b>#news</b>
+              <b>#watercooler</b>
             </h5>
           </div>
 
-          {newsList2.map((list) => {
+          {waterCoolerList2.map((list) => {
             return (
               <>
                 <ul class="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item newsList--list">
+                    <li class="list-group-item waterCoolerList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}
@@ -36,29 +36,27 @@ const NewsList = () => {
   );
 };
 
-export default NewsList;
+export default WaterCoolerList;
 
-const newsList2 = [
+const waterCoolerList2 = [
   {
-    header: "10 BACKEND PROGRAMMING LANGUAGES THAT YOU SHOULD KNOW IN 2022",
-    btn:  <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
-    status: " ",
+    header: "How 1.5 years of writing posts on dev.to made me a better developer ✍️↔️🧑‍💻🚀",
+    btn: "",
+    status: " 2 comments",
   },
   {
-    header: "How I Bypassed Netflix Profile Lock?",
-    status: " 1 comment",
+    header: "How I found a good opener for Wordle",
+    status: " 4 comment",
     btn: "",
   },
-  { header: "Appwrite 0.12 - Ask Me Anything", status: "1 comment",
-  btn: "", },
   {
-    header: "The algorithms of the tech giants soon accessible by China?",
+    header: "Geolinux 0 : Intro",
     status: "",
     btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
   },
   {
     header:
-      "Game Dev Digest — Issue #124 - New Features",
+      "Hashnode is taking over the world",
     status: "",
     btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
   }

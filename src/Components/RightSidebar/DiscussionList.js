@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import "./NewsList.scss";
+import "./DiscussionList.scss";
 
-const NewsList = () => {
+const DiscussionList = () => {
   return (
     <>
-      <div className="newsList mt-3">
+      <div className="discussionList mt-3">
         <div class="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
-              <b>#news</b>
+              <b>#discuss</b>
             </h5>
           </div>
 
-          {newsList2.map((list) => {
+          {discussionList2.map((list) => {
             return (
               <>
                 <ul class="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item newsList--list">
+                    <li class="list-group-item discussionList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}
@@ -36,31 +36,31 @@ const NewsList = () => {
   );
 };
 
-export default NewsList;
+export default DiscussionList;
 
-const newsList2 = [
+const discussionList2 = [
+ 
   {
-    header: "10 BACKEND PROGRAMMING LANGUAGES THAT YOU SHOULD KNOW IN 2022",
-    btn:  <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
-    status: " ",
-  },
-  {
-    header: "How I Bypassed Netflix Profile Lock?",
-    status: " 1 comment",
+    header: "Freelancing For The Summer",
+    status: " 2 comment",
     btn: "",
   },
-  { header: "Appwrite 0.12 - Ask Me Anything", status: "1 comment",
+  { header: "How 1.5 years of writing posts on dev.to made me a better developer ✍️↔️🧑‍💻🚀", status: "2 comment",
   btn: "", },
   {
-    header: "The algorithms of the tech giants soon accessible by China?",
+    header: "How do you review CSS?",
+    status: " 2 comment",
+    btn: "",
+  },
+  {
+    header: "What is your Dev.to Etiquette?",
     status: "",
     btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
   },
   {
-    header:
-      "Game Dev Digest — Issue #124 - New Features",
-    status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
-  }
+    header: "What was your win this week?",
+    status: " 40 comment",
+    btn: "",
+  },
   
 ];

@@ -5,6 +5,9 @@ import ListingGroup from "./ListingGroup";
 import NewsList from "./NewsList";
 import HelpList from "./HelpList";
 import MetaList from "./MetaList";
+import WaterCoolerList from "./WaterCoolerList";
+import ChallengeList from "./ChallengeList";
+import DiscussionList from "./DiscussionList";
 
 const RightSidebar = () => {
   return (
@@ -30,7 +33,10 @@ const RightSidebar = () => {
         <ListingGroup />
         <NewsList />
         <HelpList />
+        <DiscussionList />
+        <ChallengeList />
         <MetaList />
+        <WaterCoolerList />
       </div>
     </>
   );
