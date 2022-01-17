@@ -4,6 +4,7 @@ import code from "../Images/code.png";
 import ListingGroup from "./ListingGroup";
 import NewsList from "./NewsList";
 import HelpList from "./HelpList";
+import MetaList from "./MetaList";
 
 const RightSidebar = () => {
   return (
@@ -29,6 +30,7 @@ const RightSidebar = () => {
         <ListingGroup />
         <NewsList />
         <HelpList />
+        <MetaList />
       </div>
     </>
   );

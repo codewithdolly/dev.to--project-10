@@ -9,7 +9,7 @@ const HelpList = () => {
         <div class="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
-              <b>#news</b>
+              <b>#help</b>
             </h5>
           </div>
 
@@ -40,7 +40,7 @@ export default HelpList;
 
 const helpList2 = [
   {
-    header: "10 BACKEND PROGRAMMING LANGUAGES THAT YOU SHOULD KNOW IN 2022",
+    header: "Thirty Days of Rust: Day Three*",
     btn:  <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
     status: " ",
   },
