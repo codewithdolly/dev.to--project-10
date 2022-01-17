@@ -3,6 +3,7 @@ import "./RightSidebar.scss";
 import code from "../Images/code.png";
 import ListingGroup from "./ListingGroup";
 import NewsList from "./NewsList";
+import HelpList from "./HelpList";
 
 const RightSidebar = () => {
   return (
@@ -27,6 +28,7 @@ const RightSidebar = () => {
         </div>
         <ListingGroup />
         <NewsList />
+        <HelpList />
       </div>
     </>
   );

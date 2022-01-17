@@ -1,10 +1,10 @@
 @import "../Style/color";
 
-.newsList {
-  .newsList--link {
+.helpList {
+  .helpList--link {
     color: $Blue;
   }
-  .newsList--list {
+  .helpList--list {
     background-color: menu;
     color: rgba(0, 0, 0, 0.836);
   &:hover {
@@ -12,7 +12,7 @@
     color: $Blue;
   }
 }
-.newsList--create{
+.helpList--create{
     color: gray;
     margin-bottom: -1rem;
     &:hover{
