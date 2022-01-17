@@ -6,7 +6,7 @@ const ListingGroup = () => {
   return (
     <>
       <div className="listingGroup mt-3">
-        <div class="card" style={{ width: "19rem" }}>
+        <div class="card" style={{ width: "19rem"}}>
           <div className="card-header d-flex justify-content-between">
             <h5>
               <b>Listings</b>
@@ -15,25 +15,23 @@ const ListingGroup = () => {
               see all
             </button>
           </div>
-         
-            
-              {list1.map((list)=>{
-                  return(
-                      <>
-                      <ul class="list-group list-group-flush">
-                      <Link to="/">
-                      <li class="list-group-item listingGroup--list">
+
+          {list1.map((list) => {
+            return (
+              <>
+                <ul class="list-group list-group-flush">
+                  <Link to="/">
+                    <li class="list-group-item listingGroup--list">
                       <div>
-                {list.header} <br />
-                <span className="text-muted">{list.status}</span>
-              </div>
-              </li>
-              </Link>
-              </ul>
-                      </>
-                  )
-              })}
-        
+                        {list.header} <br />
+                        <span className="text-muted">{list.status}</span>
+                      </div>
+                    </li>
+                  </Link>
+                </ul>
+              </>
+            );
+          })}
         </div>
       </div>
     </>
@@ -57,8 +55,10 @@ const list1 = [
   },
 
   {
-    header:
-    <div className="text-center listingGroup--create"><b>Create Listing</b></div>,
+    header: (
+      <div className="text-center listingGroup--create">
+        <b>Create Listing</b>
+      </div>
+    ),
   },
- 
 ];

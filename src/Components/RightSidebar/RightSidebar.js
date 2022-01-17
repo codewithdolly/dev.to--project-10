@@ -2,6 +2,7 @@ import React from "react";
 import "./RightSidebar.scss";
 import code from "../Images/code.png";
 import ListingGroup from "./ListingGroup";
+import NewsList from "./NewsList";
 
 const RightSidebar = () => {
   return (
@@ -25,6 +26,7 @@ const RightSidebar = () => {
           </div>
         </div>
         <ListingGroup />
+        <NewsList />
       </div>
     </>
   );
