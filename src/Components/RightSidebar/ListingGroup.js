@@ -1,4 +1,4 @@
-import { Button } from "bootstrap";
+import { Link } from "react-router-dom";
 import React from "react";
 import "./ListingGroup.scss";
 
@@ -15,14 +15,25 @@ const ListingGroup = () => {
               see all
             </button>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div>
-                Introducing my Web 3 newsletter for you!
-                <p className="text-muted">products</p>
+         
+            
+              {list1.map((list)=>{
+                  return(
+                      <>
+                      <ul class="list-group list-group-flush">
+                      <Link to="/">
+                      <li class="list-group-item listingGroup--list">
+                      <div>
+                {list.header} <br />
+                <span className="text-muted">{list.status}</span>
               </div>
-            </li>
-          </ul>
+              </li>
+              </Link>
+              </ul>
+                      </>
+                  )
+              })}
+        
         </div>
       </div>
     </>
@@ -44,4 +55,10 @@ const list1 = [
       "Chingu - Turn what you've learned into experience to get Dev jobs!",
     status: "education",
   },
+
+  {
+    header:
+    <div className="text-center listingGroup--create"><b>Create Listing</b></div>,
+  },
+ 
 ];

@@ -1,7 +1,21 @@
 @import "../Style/color";
 
-.listingGroup{
-    .listingGroup--link{
+.listingGroup {
+  .listingGroup--link {
+    color: $Blue;
+  }
+  .listingGroup--list {
+    color: rgba(0, 0, 0, 0.836);
+  &:hover {
+    color: $Blue;
+  }
+}
+.listingGroup--create{
+    color: gray;
+    &:hover{
         color: $Blue;
     }
 }
+}
+
+
