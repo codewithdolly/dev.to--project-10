@@ -1,5 +1,11 @@
-@import "../Style/color"; 
+@import "../Style/color";
+
 .rightSidebar{
     width: 18%;
     margin-left: 20px;
+    .rightSidebar--card{
+        .rightSidebar--card--link{
+            color: $Blue;
+        }
+    }
 }
