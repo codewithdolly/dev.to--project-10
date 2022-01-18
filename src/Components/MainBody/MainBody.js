@@ -12,10 +12,10 @@ const MainBody = () => {
     return (
         <>
         <div className="mainBody">
-        <Card sx={{ maxWidth: 800 }} className="mainBody--card">
+        <Card sx={{ maxWidth: 700}} className="mainBody--card">
       <CardMedia
         component="img"
-        height="200"
+        height="300"
         image={JSImg}
         alt="green iguana"
       />
