@@ -12,7 +12,7 @@ const MainBody = () => {
     return (
         <>
         <div className="mainBody">
-        <Card sx={{ maxWidth: 500 }} className="mainBody--card">
+        <Card sx={{ maxWidth: 1400 }} className="mainBody--card">
       <CardMedia
         component="img"
         height="200"
