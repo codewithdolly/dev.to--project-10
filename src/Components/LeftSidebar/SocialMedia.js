@@ -38,7 +38,7 @@ const SocialMedia = () => {
             name="Software"
             id="software"
             multiple
-            className="p-2"
+            className="p-2 select"
             onChange={handleChange}
           >
             {hashTags.map((tag) => {
