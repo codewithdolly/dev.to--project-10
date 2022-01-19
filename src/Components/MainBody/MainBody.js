@@ -46,7 +46,6 @@ const MainBody = () => {
             </CardActions>
             <CardActions className="d-flex justify-content-between">
               <div>
-                {" "}
                 <button className="btn btn-sm">
                   <FavoriteBorderIcon size="sm" /> #codenewbie
                 </button>
@@ -55,7 +54,6 @@ const MainBody = () => {
                 </button>
               </div>
               <div>
-                {" "}
                 <button className="btn btn-sm">9 min read</button>
                 <button className="btn  mainBody--btn5">Save</button>
               </div>
