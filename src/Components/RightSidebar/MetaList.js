@@ -6,7 +6,7 @@ const MetaList = () => {
   return (
     <>
       <div className="metaList mt-3">
-        <div class="card" style={{ width: "19rem" }}>
+        <div className="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
               <b>#meta</b>
@@ -16,9 +16,9 @@ const MetaList = () => {
           {metaList2.map((list) => {
             return (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item metaList--list">
+                    <li className="list-group-item metaList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}

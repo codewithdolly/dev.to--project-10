@@ -9,7 +9,7 @@ const DevPodcast = () => {
     <>
       <div className="container-fluid devPodcast">
         <div
-          class="row alert text-light alert-dismissible fade show m-md-4 p-md-5 devPodcast-box"
+          className="row alert text-light alert-dismissible fade show m-md-4 p-md-5 devPodcast-box"
           role="alert"
         >
           <div className="col-md-8 devPodcast-box--left">
@@ -25,7 +25,7 @@ const DevPodcast = () => {
           <button
           
             type="button"
-            class="close"
+            className="close"
             size="large"
             data-dismiss="alert"
             aria-label="Close"

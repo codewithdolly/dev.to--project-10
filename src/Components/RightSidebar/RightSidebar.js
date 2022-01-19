@@ -14,10 +14,10 @@ const RightSidebar = () => {
     <>
       <div className="rightSidebar">
         <div className="card rightSidebar--card p-3" style={{ width: "19rem" }}>
-          <img src={code} class="card-img-top" alt="Code Img" height="130px" />
-          <div class="card-body">
-            <h5 class="card-title">CodeNewbie Challenge 2022</h5>
-            <h6 class="card-title ">
+          <img src={code} className="card-img-top" alt="Code Img" height="130px" />
+          <div className="card-body">
+            <h5 className="card-title">CodeNewbie Challenge 2022</h5>
+            <h6 className="card-title ">
               <b>
                 |Write More|Start Coding|Code More|Get a Job|Learn in Public|
                 <a

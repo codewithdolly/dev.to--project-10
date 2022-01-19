@@ -17,6 +17,10 @@ import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 const MainBody = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
+  const userClick= (e)=>{
+    setAnchorEl(e.currentTarget);
+  }
+
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -52,15 +56,18 @@ const MainBody = () => {
             aria-haspopup="true"
             onMouseEnter={handlePopoverOpen}
             onMouseLeave={handlePopoverClose}
+            onClick={userClick}
           >
             <Avatar src={user1} className="mr-2" />
             <Typography>
-              <b> Tapas Adhikary </b>
+            <Button color="inherit">Tapas Adhikary</Button>
               <br />
               <small>jan 18</small>
             </Typography>
           </div>
+
           <div className="mainBody--userProfile">
+            {/* Adding hover ever on user name */}
             <Popover
               id="mouse-over-popover"
               sx={{
@@ -78,7 +85,7 @@ const MainBody = () => {
               }}
               onClose={handlePopoverClose}
             >
-              {/* Cadding user profile */}
+              {/* adding user profile */}
               <Card sx={{ minWidth: 250 }}>
                 <div className="p-3 bg-success"></div>
                 <div className="px-1">
@@ -97,21 +104,37 @@ const MainBody = () => {
                     <h5>Tapas Adhikary</h5>
                   </div>
                   <CardActions>
-                  <Button variant="contained" fullWidth>
-                    Follow
-                  </Button> </CardActions>
+                    <Button variant="contained" fullWidth>
+                      Follow
+                    </Button>{" "}
+                  </CardActions>
                   <CardContent>
                     <Typography component="div" color="text.secondary">
                       Writer{bull}youtuber{bull}creator{bull}Mentor
                     </Typography>
 
-                    <Typography variant="body2">
-                      well meaning and kindly.
+                    <Typography variant="body2" sx={{ py: 1 }}>
+                      <b>EMAIL</b>
                       <br />
-                      {'"a benevolent smile"'}
+                      <a href="#">hello@gmail.com</a>
+                    </Typography>
+                    <Typography variant="body2" sx={{ pb: 1 }}>
+                      <b>WORK</b>
+                      <br />
+                      User Interface Architect and UI Manager at MicroFocus
+                    </Typography>
+                    <Typography variant="body2" sx={{ pb: 1 }}>
+                      <b>LOCATION</b>
+                      <br />
+                      Bangalore
+                    </Typography>
+                    <Typography variant="body2" sx={{ pb: 1 }}>
+                      <b>JOINED</b>
+                      <br />
+                      May 14, 2019
                     </Typography>
                   </CardContent>
-                
+                  {/* user profile ends */}
                 </div>
               </Card>
             </Popover>
@@ -155,8 +178,8 @@ export default MainBody;
 const hastags = [
   {
     user: "../Image/ben.jpg",
-    name: "Matej Bačo",
-    date: "17 jan",
+    name: "Tapas Adhikary",
+    date: "May 14",
     header: "Did we just build a Netflix clone with Appwrite?",
     hash1: "javascript",
     hash3: "opensource",
@@ -164,5 +187,14 @@ const hastags = [
     hash5: "programing",
     comment: "14",
     readMin: "9 min",
+    hobby:`Writer{bull}youtuber{bull}creator{bull}Mentor`,
+    email:"tapas.adhikary@gmail.com",
+    work:"User Interface Architect and UI Manager at MicroFocus",
+    location:"Bangalore",
+    joined:"May 14, 2019"
+
   },
 ];
+
+
+

@@ -6,12 +6,12 @@ const ListingGroup = () => {
   return (
     <>
       <div className="listingGroup mt-3">
-        <div class="card" style={{ width: "19rem"}}>
+        <div className="card" style={{ width: "19rem"}}>
           <div className="card-header d-flex justify-content-between">
             <h5>
               <b>Listings</b>
             </h5>
-            <button type="button" class="btn btn-link listingGroup--link">
+            <button type="button" className="btn btn-link listingGroup--link">
               see all
             </button>
           </div>
@@ -19,9 +19,9 @@ const ListingGroup = () => {
           {list1.map((list) => {
             return (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item listingGroup--list">
+                    <li className="list-group-item listingGroup--list">
                       <div>
                         {list.header} <br />
                         <span className="text-muted">{list.status}</span>

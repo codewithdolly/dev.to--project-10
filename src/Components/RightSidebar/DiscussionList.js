@@ -6,7 +6,7 @@ const DiscussionList = () => {
   return (
     <>
       <div className="discussionList mt-3">
-        <div class="card" style={{ width: "19rem" }}>
+        <div className="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
               <b>#discuss</b>
@@ -16,9 +16,9 @@ const DiscussionList = () => {
           {discussionList2.map((list) => {
             return (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item discussionList--list">
+                    <li className="list-group-item discussionList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}
@@ -55,7 +55,7 @@ const discussionList2 = [
   {
     header: "What is your Dev.to Etiquette?",
     status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn: <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
   },
   {
     header: "What was your win this week?",

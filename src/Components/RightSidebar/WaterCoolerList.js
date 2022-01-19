@@ -6,7 +6,7 @@ const WaterCoolerList = () => {
   return (
     <>
       <div className="waterCoolerList mt-3">
-        <div class="card" style={{ width: "19rem" }}>
+        <div className="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
               <b>#watercooler</b>
@@ -16,9 +16,9 @@ const WaterCoolerList = () => {
           {waterCoolerList2.map((list) => {
             return (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item waterCoolerList--list">
+                    <li className="list-group-item waterCoolerList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}
@@ -52,13 +52,13 @@ const waterCoolerList2 = [
   {
     header: "Geolinux 0 : Intro",
     status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn: <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
   },
   {
     header:
       "Hashnode is taking over the world",
     status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn: <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
   }
   
 ];

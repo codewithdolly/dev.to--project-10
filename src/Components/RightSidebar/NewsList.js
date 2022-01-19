@@ -6,7 +6,7 @@ const NewsList = () => {
   return (
     <>
       <div className="newsList mt-3">
-        <div class="card" style={{ width: "19rem" }}>
+        <div className="card" style={{ width: "19rem" }}>
           <div className="card-header">
             <h5>
               <b>#news</b>
@@ -16,9 +16,9 @@ const NewsList = () => {
           {newsList2.map((list) => {
             return (
               <>
-                <ul class="list-group list-group-flush">
+                <ul className="list-group list-group-flush">
                   <Link to="/">
-                    <li class="list-group-item newsList--list">
+                    <li className="list-group-item newsList--list">
                       <div>
                         {list.header} <br />
                         {list.btn}
@@ -41,7 +41,7 @@ export default NewsList;
 const newsList2 = [
   {
     header: "10 BACKEND PROGRAMMING LANGUAGES THAT YOU SHOULD KNOW IN 2022",
-    btn:  <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn:  <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
     status: " ",
   },
   {
@@ -54,13 +54,13 @@ const newsList2 = [
   {
     header: "The algorithms of the tech giants soon accessible by China?",
     status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn: <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
   },
   {
     header:
       "Game Dev Digest — Issue #124 - New Features",
     status: "",
-    btn: <button type="button" class="btn btn-primary btn-sm news--btn">New</button>,
+    btn: <button type="button" className="btn btn-primary btn-sm news--btn">New</button>,
   }
   
 ];
