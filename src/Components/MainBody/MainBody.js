@@ -9,11 +9,33 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import JSImg from "../Images/js.png";
 import user1 from "../Images/ben.jpg";
-import { Avatar } from "@mui/material";
+import Popover from "@mui/material/Popover";
+import { Avatar, Box } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 const MainBody = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handlePopoverOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+
+  const bull = (
+    <Box
+      component="span"
+      sx={{ display: "inline-block", mx: "2px", transform: "scale(0.8)" }}
+    >
+      •
+    </Box>
+  );
+
   return (
     <>
       <div className="mainBody">
@@ -24,12 +46,75 @@ const MainBody = () => {
             image={JSImg}
             alt="green iguana"
           />
-          <div className="d-flex mx-md-3 mt-md-3">
+          <div
+            className="d-flex mx-md-3 mt-md-3"
+            aria-owns={open ? "mouse-over-popover" : undefined}
+            aria-haspopup="true"
+            onMouseEnter={handlePopoverOpen}
+            onMouseLeave={handlePopoverClose}
+          >
             <Avatar src={user1} className="mr-2" />
             <Typography>
-              Tapas Adhikary <br />
+              <b> Tapas Adhikary </b>
+              <br />
               <small>jan 18</small>
             </Typography>
+          </div>
+          <div className="mainBody--userProfile">
+            <Popover
+              id="mouse-over-popover"
+              sx={{
+                pointerEvents: "none",
+              }}
+              open={open}
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              onClose={handlePopoverClose}
+            >
+              {/* Cadding user profile */}
+              <Card sx={{ minWidth: 250 }}>
+                <div className="p-3 bg-success"></div>
+                <div className="px-1">
+                  <div className="d-flex">
+                    <Avatar
+                      src={user1}
+                      alt="Remy Sharp"
+                      sx={{
+                        width: 52,
+                        height: 52,
+                        mx: 1,
+                        my: 2,
+                        marginTop: "-20px",
+                      }}
+                    />
+                    <h5>Tapas Adhikary</h5>
+                  </div>
+                  <CardActions>
+                  <Button variant="contained" fullWidth>
+                    Follow
+                  </Button> </CardActions>
+                  <CardContent>
+                    <Typography component="div" color="text.secondary">
+                      Writer{bull}youtuber{bull}creator{bull}Mentor
+                    </Typography>
+
+                    <Typography variant="body2">
+                      well meaning and kindly.
+                      <br />
+                      {'"a benevolent smile"'}
+                    </Typography>
+                  </CardContent>
+                
+                </div>
+              </Card>
+            </Popover>
           </div>
 
           <CardContent className="pl-md-5">
@@ -47,10 +132,10 @@ const MainBody = () => {
             <CardActions className="d-flex justify-content-between">
               <div>
                 <button className="btn btn-sm">
-                  <FavoriteBorderIcon size="sm" /> #codenewbie
+                  <FavoriteBorderIcon className="icon" /> #codenewbie
                 </button>
                 <button className="btn btn-sm">
-                  <ChatBubbleOutlineIcon size="sm" /> #codenewbie
+                  <ChatBubbleOutlineIcon className="icon" /> #codenewbie
                 </button>
               </div>
               <div>
