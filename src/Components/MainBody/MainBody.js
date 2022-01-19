@@ -24,7 +24,7 @@ const MainBody = () => {
             image={JSImg}
             alt="green iguana"
           />
-          <div className="d-flex m-md-3 mb-md-0">
+          <div className="d-flex mx-md-3 mt-md-3">
             <Avatar src={user1} className="mr-2" />
             <Typography>
               Tapas Adhikary <br />
