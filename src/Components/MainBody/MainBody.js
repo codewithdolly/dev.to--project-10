@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./MainBody.scss";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
@@ -7,7 +7,6 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import JSImg from "../Images/js.png";
 import user1 from "../Images/ben.jpg";
 import Popover from "@mui/material/Popover";
 import { Avatar, Box } from "@mui/material";
@@ -15,7 +14,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
 
 const MainBody = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const userClick= (e)=>{
     setAnchorEl(e.currentTarget);
@@ -43,11 +42,13 @@ const MainBody = () => {
   return (
     <>
       <div className="mainBody">
-        <Card sx={{ maxWidth: 700 }} className="mainBody--card">
+      {hastags.map((user)=>{
+        return (<>
+          <Card sx={{ maxWidth: 700 }} className="mainBody--card">
           <CardMedia
             component="img"
             height="300"
-            image={JSImg}
+            image={process.env.PUBLIC_URL+ user.postImg}
             alt="green iguana"
           />
           <div
@@ -91,7 +92,7 @@ const MainBody = () => {
                 <div className="px-1">
                   <div className="d-flex">
                     <Avatar
-                      src={user1}
+                      src={process.env.PUBLIC_URL+ user.img}
                       alt="Remy Sharp"
                       sx={{
                         width: 52,
@@ -168,6 +169,9 @@ const MainBody = () => {
             </CardActions>
           </CardContent>
         </Card>
+        </>)
+      })}
+       
       </div>
     </>
   );
@@ -177,7 +181,8 @@ export default MainBody;
 
 const hastags = [
   {
-    user: "../Image/ben.jpg",
+    postImg:"../Images/js.png",
+    img: "../Image/ben.jpg",
     name: "Tapas Adhikary",
     date: "May 14",
     header: "Did we just build a Netflix clone with Appwrite?",
@@ -192,7 +197,23 @@ const hastags = [
     work:"User Interface Architect and UI Manager at MicroFocus",
     location:"Bangalore",
     joined:"May 14, 2019"
-
+  },
+  {
+    img: "../Image/ben.jpg",
+    name: "Tapas Adhikary",
+    date: "May 14",
+    header: "Did we just build a Netflix clone with Appwrite?",
+    hash1: "javascript",
+    hash3: "opensource",
+    hash4: "Webdev",
+    hash5: "programing",
+    comment: "14",
+    readMin: "9 min",
+    hobby:`Writer{bull}youtuber{bull}creator{bull}Mentor`,
+    email:"tapas.adhikary@gmail.com",
+    work:"User Interface Architect and UI Manager at MicroFocus",
+    location:"Bangalore",
+    joined:"May 14, 2019"
   },
 ];
 
