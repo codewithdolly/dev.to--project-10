@@ -44,13 +44,14 @@ const MainBody = () => {
       <div className="mainBody">
       {hastags.map((user)=>{
         return (<>
-          <Card sx={{ maxWidth: 700 }} className="mainBody--card">
-          <CardMedia
+          <Card sx={{ maxWidth: 700 }} className="mainBody--card my-2">
+          {user.postImg?<CardMedia
             component="img"
             height="300"
             image={process.env.PUBLIC_URL+ user.postImg}
-            alt="green iguana"
-          />
+            // alt={user.header}
+          />:""}
+          
           <div
             className="d-flex mx-md-3 mt-md-3"
             aria-owns={open ? "mouse-over-popover" : undefined}
@@ -93,7 +94,7 @@ const MainBody = () => {
                   <div className="d-flex">
                     <Avatar
                       src={process.env.PUBLIC_URL+ user.img}
-                      alt="Remy Sharp"
+                      alt="Tapas Adhikary"
                       sx={{
                         width: 52,
                         height: 52,
@@ -144,14 +145,16 @@ const MainBody = () => {
           <CardContent className="pl-md-5">
             <Link to="/">
               <Typography className="mainBody--header">
-                JavaScript object destructuring usages you must know
+                {user.header}
               </Typography>
             </Link>
             <CardActions>
-              <button className="btn btn-sm mainBody--btn1">#javascript</button>
-              <button className="btn btn-sm mainBody--btn2">#programing</button>
-              <button className="btn btn-sm mainBody--btn3">#begginers</button>
-              <button className="btn btn-sm mainBody--btn4">#codenewbie</button>
+            {user.hash1? <button className="btn btn-sm mainBody--btn1">{user.hash1}</button>:'' }
+
+            {user.hash2? <button className="btn btn-sm mainBody--btn2">{user.hash2}</button>:'' }
+            {user.hash3? <button className="btn btn-sm mainBody--btn3">{user.hash3}</button>:'' }
+            {user.hash4? <button className="btn btn-sm mainBody--btn4">{user.hash4}</button>:'' }
+             
             </CardActions>
             <CardActions className="d-flex justify-content-between">
               <div>
@@ -204,9 +207,7 @@ const hastags = [
     date: "May 14",
     header: "Did we just build a Netflix clone with Appwrite?",
     hash1: "javascript",
-    hash3: "opensource",
-    hash4: "Webdev",
-    hash5: "programing",
+    hash2: "opensource",
     comment: "14",
     readMin: "9 min",
     hobby:`Writer{bull}youtuber{bull}creator{bull}Mentor`,

@@ -185,7 +185,7 @@ const Header = () => {
               >
                 <b>Create Post</b>
               </Button>
-              <Box sx={{ display: { xs: "none", md: "flex" } }}>
+             <div> <Box sx={{ display: { xs: "none", md: "flex" } }}>
                 <IconButton
                   size="large"
                   aria-label="show 4 new mails"
@@ -207,7 +207,7 @@ const Header = () => {
                 >
                   <Avatar src={Dolly} sx={{ width: 35, height: 35 }} />
                 </IconButton>
-              </Box>
+              </Box></div>
               <Box sx={{ display: { xs: "flex", md: "none" } }}>
                 <IconButton
                   size="large"
